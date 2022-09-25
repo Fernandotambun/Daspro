@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Biodata Fernando Tambun</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="BIODATA DAN JADWAL KRS">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Fernando Oloan Tambun">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    background-image: url(back.jpg);
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+
+}
+    .float-img{
+        float: left;
+        margin-top: 10px ;
+        margin-right: 10px ; 
+        margin-bottom: 5px;
+        border: solid black 1px;
+        padding: 2px;
+    }
+    .table {
+        margin-top: 15px;
+        
+    }
+hr {
+    line-height:100px ;
+    margin-top: -25px;
+}
+</style>
+</head>
+<body>
+
+    <h1>Biodata</h1>
+    <hr align="left" width="55%" color="black" >
+
+    <img src="profile.jpg" width="180" height="200" class="float-img">
+    <table cellpadding="5px" width="400px" class="table">
+        <tr>
+            <td>Nama</td>
+            <td>: Fernando Oloan Tambun</td>
+        </tr>
+        <tr>
+            <td>NIM</td>
+            <td>: A11.2022.14723</td>
+        </tr>
+        <tr>
+            <td>Fakultas</td>
+            <td>: Fakultas Ilmu Komputer</td>
+        </tr>
+        <tr>
+            <td>Prodi</td>
+            <td>: Teknik Informatika</td>
+        </tr>
+        <tr>
+            <td>Kelp</td>
+            <td>: A11.4119</td>
+        </tr>
+        <tr>
+            <td>Dosen Wali</td>
+            <td>: Wise Herowati, M.Kom</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>: 11202214723@mhs.dinus.ac.id</td>
+        </tr>
+    </table>
+    <h1>Jadwal KRS</h1>
+    <hr align="left" width="55%" color="black" >
+    <table border="1" width="700" class="table" > 
+        <tr>
+            <th>No</th>    
+            <th>Kode MK</th>
+            <th>Nama Mata Kuliah</th>
+            <th>SKS</th>
+            <th>T/P</th>
+            <th>STS</th>
+            <th>Kelp.</th>
+        </tr>
+        <tr align="center">
+            <td>1.</td>
+            <td>A11.54101</td>
+            <td align="left">KALKULUS 1</td>
+            <td>4</td>
+            <td>T</td>
+            <td>B</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr align="center">
+            <td>2.</td>
+            <td>A11.54105</td>
+            <td align="left">DASAR PEMPROGRAMAN</td>
+            <td>4</td>
+            <td>TP</td>
+            <td>B</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr align="center">
+            <td>3.</td>
+            <td>A11.54302</td>
+            <td align="left">MATEMATIKA DISKRIT</td>
+            <td>3</td>
+            <td>T</td>
+            <td>B</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr align="center">
+            <td>4.</td>
+            <td>A11.54314</td>
+            <td align="left">PEMPROGRAMAN BERBASIS WEB</td>
+            <td>2</td>
+            <td>T</td>
+            <td>B</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr align="center">
+            <td>5.</td>
+            <td>A11.54403</td>
+            <td align="left">ORGANISASI DAN ARSITEKTUR KOMPUTER</td>
+            <td>3</td>
+            <td>T</td>
+            <td>B</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr align="center">
+            <td>6.</td>
+            <td>AF201704</td>
+            <td align="left">DASAR DASAR KOMPUTASI</td>
+            <td>2</td>
+            <td>P</td>
+            <td>B</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr align="center">
+            <td>7.</td>
+            <td>U201704</td>
+            <td align="left">PENGANTAR TEKNOLOGI INFORMASI</td>
+            <td>2</td>
+            <td>T</td>
+            <td>B</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right"> Jumlah Sks</td>
+            <td align="center">20</td>
+        </tr>
+    </table>
+    <h1>Video Motivasi</h1>
+    <hr align="left" width="55%" color="black" >
+    <p class="button">
+        <button onclick="playVid()" type="button"> Play </button>
+        <button onclick="pauseVid()" type="button"> Pause </button>
+        <button onclick="enableCon()" type="button"> Enable Control </button>
+        <button onclick="disableCon()" type="button"> Disable Control </button>
+        <button onclick="durationVid()" type="button"> Check Duration </button>
+        <button onclick="enableLoop()" type="button"> Enable Loop </button>
+        <button onclick="disableLoop()" type="button"> Disable Loop </button>
+        <br>
+        <button onclick="enableMute()" type="button"> Muted </button>
+        <button onclick="disableMute()" type="button"> Unmute </button>
+        <button onclick="makeBig()" type="button"> Zoom Video </button>
+        <button onclick="makeSmall()" type="button"> Reduce Video  </button>
+        <button onclick="makeNormal()" type="button"> Normal Size  </button>
+        <button onclick="checkCon()" type="button"> Check Control </button>
+        <button onclick="checkLoop()" type="button"> Check Loop </button>
+    </p>
+    
+    <video id="fervid" width="420"  >
+        <source src="motivasi.mp4" type="video/mp4" >
+        Browser Tidak Mendukung
+    </video>
+    <h1>Lagu Kemenangan</h1>
+    <hr align="left" width="55%" color="black" >
+    <p>
+        <button onclick="playAudio()">Play</button>
+        <button onclick="pauseAudio()">Pause</button>
+        <button onclick="enableLoopAudio()">Enable Loop</button>
+        <button onclick="disableLoopAudio()">Disable Loop</button>
+        <button onclick="enableConAudio()">Enable Controls</button>
+        <button onclick="disableConAudio()">Disable Controls</button>
+        <button onclick="durasiAudio()">Check Durasi</button>
+
+    </p>
+    <audio id="feraudio" >
+        <source src="laguu.mp3" type="audio/mp3">
+        Browser Tidak Mendukung
+    </audio>
+
+    <script>
+        var fer = document.getElementById("fervid");
+
+        //function untuk muter video
+        function playVid(){
+            fer.play();
+        }
+        //function untuk mehentikan video
+        function pauseVid(){
+            fer.pause();
+        }
+        //function untuk aktifin fitur controls video
+        function enableCon(){
+            fer.controls = true;
+            fer.load();
+        }
+        //function untuk matiin fitur controls video
+        function disableCon(){
+            fer.controls = false;
+            fer.load();
+        }
+        //function untuk cek status control, true=aktif, false=nonaktif
+        function checkCon(){
+            alert(fer.controls);
+        }
+        //function untuk cek durasi video
+        function durationVid(){
+            alert(fer.duration);
+        }
+        //function untuk aktifin fitur loop video
+        function enableLoop() { 
+            fer.loop = true;
+            fer.load();
+        } 
+        //function untuk aktifin fitur loop video
+        function disableLoop() { 
+            fer.loop = false;
+            fer.load();
+        } 
+        //function untuk cek status loop, true=aktif, false=nonaktif
+        function checkLoop() { 
+            alert(fer.loop);
+        } 
+        //function untuk mematikan suara video
+        function enableMute() { 
+            fer.muted = true;
+        } 
+        //function untuk menyalakan suara video
+        function disableMute() { 
+            fer.muted = false;
+        } 
+        //function untuk memperbesar ukuran video
+        function makeBig() { 
+            fer.width = 560;
+        } 
+        //function untuk memperkecil ukuran video
+        function makeSmall() { 
+            fer.width = 320;
+        } 
+        //function untuk menormalkan ukuran seperti di awal
+        function makeNormal() { 
+            fer.width  = 420;
+        } 
+        
+
+        var fers = document.getElementById("feraudio")
+
+        function playAudio(){
+            fers.play();
+        }
+        function pauseAudio(){
+            fers.pause();
+        }
+        function enableLoopAudio(){
+            fers.loop = true;
+        }
+        function disableLoopAudio(){
+            fers.loop = false;
+        }
+        function enableConAudio(){
+            fers.controls = true;
+        }
+        function disableConAudio(){
+            fers.controls = false;
+        }
+        function durasiAudio(){
+            alert(fers.duration);
+        }
+    </script>
+
+</body>
+</html>
