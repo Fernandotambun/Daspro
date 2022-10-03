@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>From</title>
+    <title>FORMULIR PPDB JALUR ZONASI TAHUN 2022</title>
 </head>
 <style>
     .h1
     {
-        font-family: ;
-        background-color: cornsilk;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(224, 213, 106);
         text-align: center;
     }
     .t_kanan
@@ -20,151 +20,157 @@
     .table
     {
         border: black solid;
-        background-color: cornsilk;
+        background-color: rgb(224, 213, 106);
         font-family:'Times New Roman', Times, serif ;
-        padding-left: ;
+        padding-left: 5px;
     }
-
+    
 </style>
 <body>
-    <h1 class="h1">Form </h1>
-    <form name="fmhs" method="POST" action="proses.php" >
+    <h1 class="h1">FORMULIR PPDB JALUR ZONASI TAHUN 2022</h1>
+    <form method="POST" action="proses.php" >
         <table class="table">
-        <th>Data Sekolah</th>
+        <th>DATA SEKOLAH</th>
         <tr>
             <td>NISN</td>
             <td>:</td>
-            <td><input type="number" name="nim" placeholder="Masukkan NISN"></td>
+            <td><input type="number" name="nisn" placeholder="Masukkan NISN"></td>
         </tr>
         <tr>
             <td>Asal Sekolah</td>
             <td>:</td>
-            <td><input type="text" name="nama" placeholder="Masukan Asal Sekolah"></td>
+            <td><input type="text" name="sekolah" placeholder="Masukan Asal Sekolah"></td>
         </tr>
         <tr>
             <td>Tahun Lulus</td>
             <td>:</td>
-            <td><input type="date" name="tgl" placeholder="Masukan Tgl Lahir"></td>
+            <td><input type="date" name="lulus" placeholder="Masukan Tgl Lahir"></td>
         </tr>
         <th>DATA CALON PESERTA</th>
         <tr>    
             <td>Nama Lengkap</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukan Nama Lengkap"></td>
+            <td><input type="text" name="nama" placeholder="Masukan Nama Lengkap"></td>
         </tr>
         <tr>
             <td>NIK</td>
             <td>:</td>
-            <td><input type="number" name="nim" placeholder="Masukkan NIK"></td>
+            <td><input type="number" name="nik" placeholder="Masukkan NIK"></td>
         </tr>
         <tr>
             <td>Tempat/Tanggal Lahir</td>
             <td>:</td>
-            <td> <input type="date" name="" placeholder=""> </td>
+            <td> <input type="date" name="ttl" placeholder="Masukkan Tanggal/Lahir"> </td>
         </tr>
         <tr>
             <td>Foto Copy Akte Kelahiran</td>
             <td>:</td>
-            <td><input type="file" name="" placeholder=""></td>
+            <td><input type="file" name="lahir" placeholder="Masukkan Akte"></td>
         </tr>
         <tr>
             <td>Jenis Kelamin</td>
             <td>:</td>
-            <td><select name="Kelamin" id="">
-                <option value="1">Laki - Laki</option>
-                <option value="2">Perempuan</option>
+            <td><select name="jk">
+                <option></option>
+                <option>Laki - Laki</option>
+                <option>Perempuan</option>
             </select></td>
         </tr>
         <tr>
             <td>Alamat</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan alamat"></td>
+            <td><input type="text" name="alamat" placeholder="Masukkan alamat"></td>
         </tr>
         <tr> 
             <td>Desa/Kel</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Desa/Kel"></td>
+            <td><input type="text" name="desa" placeholder="Masukkan Desa/Kel"></td>
         </tr>
         <tr>
             <td>Kecamatan</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Kecamatan"></td>
+            <td><input type="text" name="keca" placeholder="Masukkan Kecamatan"></td>
         </tr>
         <tr>
             <td>Kabupaten</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Kabupaten"></td>
+            <td><input type="text" name="kab" placeholder="Masukkan Kabupaten"></td>
         </tr>
         <tr>
             <td>Provinsi</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Provinsi"></td>
+            <td><input type="text" name="prov" placeholder="Masukkan Provinsi"></td>
         </tr>
         <tr>
             <td>Email Aktif</td>
             <td>:</td>
-            <td><input type="email" name="" placeholder="Masukkan Email"></td>
+            <td><input type="email" name="email" placeholder="Masukkan Email"></td>
         </tr>
         <th>DATA ORANG TUA</th>
         <tr>
             <td>Nomor Kartu Keluarga</td>
             <td>:</td>
-            <td><input type="number" name="" placeholder="Masukkan Nomor KK"></td>
+            <td><input type="number" name="kk" placeholder="Masukkan Nomor KK"></td>
         </tr>
         <tr>
             <td>Nama Ayah Kandung</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Nama"></td>
+            <td><input type="text" name="namaayah" placeholder="Masukkan Nama"></td>
         </tr>
         <tr>
             <td>Agama</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Agama"></td>
+            <td><input type="text" name="agamyah" placeholder="Masukkan Agama"></td>
         </tr>
         <tr>
             <td>Pekerjaan</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Pekerjaan"></td>
+            <td><input type="text" name="kerja" placeholder="Masukkan Pekerjaan"></td>
         </tr>
         <tr>
             <td>Nama Ibu Kandung</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukan Nama"></td>
+            <td><input type="text" name="namaibu" placeholder="Masukan Nama"></td>
         </tr>
         <tr>
             <td>Agama</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukan Agama"></td>
+            <td><input type="text" name="agamibu" placeholder="Masukan Agama"></td>
         </tr>
         <tr>
             <td>Pekerjaan</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukan Pekerjaan"></td>
+            <td><input type="text" name="kerjaibu" placeholder="Masukan Pekerjaan"></td>
         </tr>
         <tr>
             <td>Alamat Orang Tua</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukan Alamat"></td>
+            <td><input type="text" name="alamatortu" placeholder="Masukan Alamat"></td>
         </tr>
         <tr>
             <td>Desa/Kel</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Desa/Kel"></td>
+            <td><input type="text" name="desortu" placeholder="Masukkan Desa/Kel"></td>
         </tr>
         <tr>
             <td>Kecamatan</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Kecamatan"></td>
+            <td><input type="text" name="kecortu" placeholder="Masukkan Kecamatan"></td>
         </tr>
         <tr>
             <td>Kabupaten</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Kabupaten"></td>
+            <td><input type="text" name="kabortu" placeholder="Masukkan Kabupaten"></td>
         </tr>
         <tr>
             <td>Provinsi</td>
             <td>:</td>
-            <td><input type="text" name="" placeholder="Masukkan Provinsi"></td>
+            <td><input type="text" name="provortu" placeholder="Masukkan Provinsi"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td align="left"><input type="submit" name="submit"><input type="reset" name="reset"></td>
         </tr>
         <table>
     </form>
