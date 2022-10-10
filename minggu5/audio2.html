@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Tutorial Elemen Semantic">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreasikan atribut audio</title>
+</head>
+<body style="background-color:rgb(173, 162, 59)">
+    <h1>Tag Audio</h1>
+    <p>
+        <button onclick="playAudio()">Play</button>
+        <button onclick="pauseAudio()">Pause</button>
+        <button onclick="enableLoopAudio()">Enable Loop</button>
+        <button onclick="disableLoopAudio()">Disable Loop</button>
+        <button onclick="enableConAudio()">Enable Controls</button><br>
+        <button onclick="disableConAudio()">Disable Controls</button>
+        <button onclick="durasiAudio()">Check Durasi</button>
+        <button onclick="hiddenAudio()">Hidden</button>
+        <button onclick="unHidden()">UnHidden</button>
+
+    </p>
+    <audio id="feraudio" >
+        <source src="Audio.mp3" type="audio/mp3">
+        Browser Tidak Mendukung
+    </audio>
+    <script>
+    var fers = document.getElementById("feraudio")
+
+    function playAudio(){
+        fers.play();
+    }
+    function pauseAudio(){
+        fers.pause();
+    }
+    function enableLoopAudio(){
+        fers.loop = true;
+    }
+    function disableLoopAudio(){
+        fers.loop = false;
+    }
+    function enableConAudio(){
+        fers.controls = true;
+    }
+    function disableConAudio(){
+        fers.controls = false;
+    }
+    function durasiAudio(){
+        alert(fers.duration);
+    }
+    function hiddenAudio(){
+        fers.hidden = true;
+    }
+    function unHidden(){
+        fers.hidden = false;
+    }
+    </script>
+
+
+</body>
+</html>
