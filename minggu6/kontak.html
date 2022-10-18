@@ -3,59 +3,77 @@
  
 <head> 
     <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Website Element HTML5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Fernando Tambun">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Personal Website</title> 
+    <link rel="icon" type="image/png" sizes="96x96" href="media/favicon-96x96.png">
+    <title>Contact</title> 
+    <style>
+        div
+        {
+            border-right: black solid 1px;
+            float: left;
+            width: 20%;
+            margin-right: 2%;
+            padding-left: 2%;
+        }
+        aside
+        {
+            margin-top: 45px;
+        }
+        .wdth
+        {
+            width: 65px;
+        }
+        .wdth2
+        {
+            width: 50px;
+        }
+        .wdth3
+        {
+            width: 65px;
+        }
+    </style>
 </head> 
-<style>
-    div
-    {
-        border-right: black solid 1px;
-        float: left;
-        width: 20%;
-        margin-right: 2%;
-        padding-left: 2%;
-    }
-    aside
-    {
-        margin-top: 45px;
-    }
-</style>
+
 <body> 
-    <nav> 
+    <nav style="text-align:center ;"> <!-- untuk membuat navigasi -->
         <a href="index.html">Home</a> | 
         <a href="cv-name.pdf">Download CV</a> | 
         <a href="kontak.html">Contact</a> | 
-        <a href="tentang.html">About me</a> 
+        <a href="tentang.html">About me</a> |
+        <a href="project.html">Project</a> 
     </nav> 
  
-    <hr /> 
+    <hr> 
     <div>
         <h1 style="margin-top: -5px;">Kontak saya</h1>
-        <p>Telepon  : +628-3945-2395</p>
+        <h3>Telepon  : +628-3945-2395</h3>
         <br>
-        <p>infobang@site.com</p>
-        <br>
-        <a href=""><img src="" alt=""></a>        
-        <a href=""><img src="media/inst.jpg" alt="" width="65px" style="margin-left:-15px ;" ></a>
-        <a href=""><img src="media/facbook.png" alt="" width="50px" style="margin-bottom: 10px;" ></a>
-        <a href=""><img src="media/twit.jpg" alt="" width="65px"  ></a>
+        <h3>infobang@site.com</h3>
+        <br>   
+        <a href=""><img src="media/inst.jpg" alt="Not Suppport" class="wdth" style="margin-left:-15px ;" ></a>
+        <a href=""><img src="media/facbook.png" alt="Not Suppport" class="wdth2" style="margin-bottom: 10px;" ></a>
+        <a href=""><img src="media/twit.jpg" alt="Not Suppport" class="wdth3"  ></a>
     </div>
  
     <aside> 
         <form> 
-            <label for="nama">Nama</label><br /> 
-            <input type="text" name="nama" placeholder="Masukkan Nama"/> 
+            <label id="nama">Nama</label><br> 
+            <input type="text" name="nama" placeholder="Masukkan Nama"> 
             <br>
             <br>
-            <label for="email">Email</label><br /> 
-            <input type="email" name="email" placeholder="Masukkan Email"/> 
+            <label id="email">Email</label><br> 
+            <input type="email" name="email" placeholder="Masukkan Email"> 
             <br>
             <br>
-            <label for="message">Pesan</label><br /> 
+            <label id="message">Pesan</label><br> 
             <textarea name="message" placeholder="Tulis pesan anda..." rows="3" cols="50"></textarea> 
             <br>
             <br>
-            <input type="submit" value="Kirim" /> 
+            <input type="submit" value="Kirim"> 
         </form> 
     </aside> 
     

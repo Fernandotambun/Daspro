@@ -3,53 +3,81 @@
  
 <head> 
     <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Website Element HTML5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Fernando Tambun">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Contoh Project Pemrograman Website</title> 
+    <link rel="icon" type="image/png" sizes="96x96" href="media/favicon-96x96.png">
+    <title>My Project</title> 
+    <style>
+        .gmbr
+        {
+            position:relative;
+            left:14cm;
+            top: 10px;
+        }
+        h2
+        {
+            position: absolute;
+            left: 1cm;
+            top: 7.2rem;
+            background-color: cadetblue;
+        }
+        .tks
+        {
+            position: absolute;
+            text-align: center;
+            left: 1.5px;
+            top: 9rem ;
+            background-color: cadetblue;
+        }
+        .tks1
+        {
+            position: absolute;
+            left: 2.5cm;
+            top: 5.6cm ;
+            background-color: cadetblue;
+        }
+        .wdth
+        {
+            width: 20%;
+        }
+     </style>
 </head> 
- <style>
-    .gmbr
-    {
-        position:relative;
-        left:14cm;
-        top: 10px;
-    }
-    h2
-    {
-        position: absolute;
-        left: 1cm;
-        top: 7.2rem;
-        background-color: cadetblue;
-    }
- </style>
+
 <body> 
     <nav style="text-align:center ;"> <!-- untuk membuat navigasi -->
         <a href="index.html">Home</a> | 
         <a href="cv-name.pdf">Download CV</a> | 
         <a href="kontak.html">Contact</a> | 
         <a href="tentang.html">About me</a> |
-        <a href="news.html">News</a> |
         <a href="project.html">Project</a> 
     </nav> 
  
-    <hr /> 
+    <hr> 
  
     <header style="text-align: center; background-color: bisque;"> 
         <h1>My Project</h1>  
     </header> 
     <article style="text-align:center ;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         <br>
         dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
         <br>
         dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec
         <br>
         adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui
-        </p>
+        </h5>
     </article>
     <section class="gmbr" >
-        <img  src="media/cod.jpg" alt="test" width="20%">
+        <img  src="media/cod.jpg" alt="test" class="wdth">
         <h2>Membuat Website</h2>
-        <p></p>
+        
+        <p class="tks">Saya akan membuat website pada tanggal <time datetime="2022-10-18"> <br> 18 Oktober 2022</time>
+            sampai pada tanggal <time datetime="2022-11-04"> <br> 4 November 2022</time><br>
+        </p>
+        <a href="soon.html" class="tks1">Read More</a>
     </section>
 
 </body> 
