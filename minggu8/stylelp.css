@@ -1,0 +1,118 @@
+body {
+    background-color: aliceblue;
+}
+header h1 {
+    position: fixed;
+}
+
+header h1 span {
+    color: blue;
+    font-weight: bold;
+    position: fixed;
+}
+
+
+header {
+    float: left;
+    margin-left: 50px;
+}
+
+nav ul {
+    position: fixed;
+    list-style-type: none;
+    margin-top: 17px;
+    margin-left: 5cm;
+    padding: 0;
+    /* overflow: hidden; */
+    background-color: transparent;
+}
+
+li {
+  float: left;
+  
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(28,110,164,0.52);
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 0;
+    transition: 0.4s;
+}
+
+.signup {
+    color: white;
+    background-color: rgba(28,110,164,0.52);
+}
+
+.signin {
+    color: rgb(104, 85, 224);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(28,110,164,0.52);
+    margin-left: 28cm;
+    margin-top: 25px;
+}
+
+.regis {
+    margin-left: 160px;
+    color: white;
+    background-color: rgba(28,110,164,0.52);
+}
+
+button:hover {
+    color: white;
+    background-color: rgba(28,110,164,0.52);
+}
+
+section h1{
+    margin: 150px 160px;
+    font-size: 50px;
+}
+
+section p {
+    margin-top: -4cm;
+    margin-left: 160px;
+    width: 12cm;
+    text-align: justify;
+    border: 1px solid;
+    border-color: transparent;
+}
+
+aside img {
+    border-radius: 20cm;
+    margin: -250px 23cm;
+}
+
+article {
+    border: 1px solid;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    border-radius: 10px;
+    margin: 300px 150px;
+    width: 28cm;
+}
+
+.satu {
+    text-align: justify;
+    padding: 0 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: ;
+}
